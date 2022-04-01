@@ -1,0 +1,557 @@
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/epilogue/Epilogue-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/epilogue/Epilogue-Medium.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/epilogue/Epilogue-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/epilogue/Epilogue-Black.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("../fonts/epilogue/Epilogue-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("../fonts/epilogue/Epilogue-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue-Regular";
+}
+body button {
+  border: none;
+}
+body a {
+  text-decoration: none;
+  color: #fff;
+}
+body ul {
+  list-style: none;
+}
+body header {
+  background-color: #fff;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 90px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+body header div {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px 0px 10px;
+}
+body header div svg {
+  width: 130px;
+}
+body header nav.show-desktop {
+  display: none;
+}
+body header button {
+  display: flex;
+  padding: 10px;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  background-color: #25409A;
+}
+body main {
+  margin-top: 50px;
+  width: 100%;
+}
+body main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body main div section#hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main div section#hero div#download-app {
+  padding: 0px 15px 0px 20px;
+  width: 100%;
+  display: table;
+  justify-items: center;
+  flex-direction: row;
+}
+body main div section#hero div#download-app h1 {
+  padding: 0;
+  margin: 0;
+  color: #436ccc;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  transform: scale(1, 0.9);
+}
+body main div section#hero div#download-app h2 {
+  max-width: 366px;
+  min-height: 27px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #211F62;
+  text-align: left;
+  font-size: 34px;
+}
+body main div section#hero div#download-app p {
+  margin-top: 0px;
+  padding-top: 0px;
+  max-width: 435px;
+  color: #9999B7;
+  font-size: 15px;
+  text-align: left;
+}
+body main div section#hero div#download-app div#download-buttons {
+  padding: 20px 3px 0px 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 290px;
+  margin-left: 0px;
+  justify-content: space-around;
+}
+body main div section#hero div#download-app div#download-buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 16px;
+  font-weight: 500;
+  border-radius: 27px;
+  color: #32306E;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+body main div section#hero div#download-app div#download-buttons a:first-child {
+  background-color: #FB6E67;
+  color: #fff;
+  box-shadow: none;
+}
+body main div section#hero div#lottie-animation {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+}
+body main div section#hero div#lottie-animation lottie-player {
+  max-width: 500px;
+  max-height: 500px;
+  padding: 0;
+  margin-top: 30px;
+}
+body main div#about-us {
+  background-color: rgba(127, 157, 228, 0.8196078431);
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  width: 100%;
+  min-height: 720px;
+  max-height: 720px;
+}
+body main div#about-us section#our-objective {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 50px;
+}
+body main div#about-us section#our-objective div#list-animation {
+  padding-top: 20px;
+}
+body main div#about-us section#our-objective div#list-animation lottie-player {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  transform: translateY(-102px);
+  border-radius: 13px;
+}
+body main div#about-us section#our-objective div#list-animation ul {
+  padding: 0;
+}
+body main div#about-us section#our-objective div#list-animation ul li {
+  font-size: 1.3em;
+  color: black;
+  font-weight: 400;
+  text-align: left;
+  background: url("../imagens/check.svg") no-repeat;
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
+  padding: 10px 0 15px 50px;
+  margin-bottom: 15px;
+}
+body main div#about-us section#our-objective div#text {
+  display: flex;
+  padding: 0px 5px;
+  text-align: center;
+}
+body main div#about-us section#our-objective div#text h3 {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #d5514a;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  transform: scale(1, 0.9);
+}
+body main div#about-us section#our-objective div#text h2 {
+  margin-bottom: 6px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #32306E;
+  max-width: 512px;
+}
+body main div#pre-footer-section {
+  padding: 50px 0px;
+  background: blue;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+body main div#pre-footer-section section div.doctors-list {
+  text-align: center;
+}
+body main div#pre-footer-section section div.doctors-list h3 {
+  font-size: 1em;
+  letter-spacing: 1px;
+  transform: scale(1, 0.9);
+  color: #618FFB;
+  font-weight: 300;
+}
+body main div#pre-footer-section section div.doctors-list h2 {
+  padding: 0px 8.3px;
+  margin-top: 0px;
+  font-size: 2em;
+  color: #211F62;
+}
+body main div#pre-footer-section section div.cards-list {
+  display: flex;
+  flex-direction: column;
+}
+body main div#pre-footer-section section div.cards-list div.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 13px;
+  max-width: 200px;
+  max-height: 450px;
+  padding: 0px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 1, 0.131);
+  transition: 0.5s ease-in-out;
+  margin-top: 35px;
+}
+body main div#pre-footer-section section div.cards-list div.cards lottie-player {
+  width: 400px;
+  height: 300px;
+  transform: translateY(-3px);
+}
+body main div#pre-footer-section section div.cards-list div.cards div.card-info {
+  background-color: white;
+  transform: translateY(-40px);
+}
+body main div#pre-footer-section section div.cards-list div.cards div.card-info h2 {
+  max-width: 185px;
+  color: #211F62;
+  margin: 20px 0px 0px 0px;
+}
+body main div#pre-footer-section section div.cards-list div.cards div.card-info h3 {
+  max-width: 185px;
+  font-weight: 300;
+  color: #4B80FC;
+  margin: 10px 0px;
+}
+body main div#pre-footer-section section div.cards-list div.cards div.card-info p {
+  max-width: 190px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px 10px;
+}
+body main div#pre-footer-section section div.cards-list div.cards:hover {
+  box-shadow: 0 1px 6px rgba(0, 0, 1, 0.452);
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  body header {
+    padding: 60px;
+  }
+  body header nav.show-desktop {
+    display: flex;
+    align-items: center;
+  }
+  body header nav.show-desktop a {
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+    padding: 10px;
+    color: #211F62;
+    margin-left: 8px;
+  }
+  body header nav.show-desktop a:last-child {
+    border-radius: 27px;
+    transition: 600ms ease-in-out;
+  }
+  body header nav.show-desktop a:last-child:hover {
+    font-weight: 500;
+    padding: 16px 20px;
+    color: #ffffff;
+    background-color: #FB6E67;
+  }
+  body header nav.show-desktop a.underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #211F62;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  body header nav.show-desktop a.underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  body header button {
+    display: none;
+  }
+  body main {
+    margin-top: 0px;
+  }
+  body main div section#hero {
+    flex-direction: unset;
+  }
+  body main div section#hero div#download-app {
+    justify-content: center;
+    width: 40%;
+  }
+  body main div section#hero div#lottie-animation {
+    width: 40%;
+  }
+  body main div#about-us section#our-objective {
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  body main div#about-us section#our-objective div#list-animation {
+    transform: translateY(130px);
+  }
+  body main div#about-us section#our-objective div#list-animation ul li {
+    font-size: 1.6em;
+  }
+  body main div#about-us section#our-objective div#list-animation lottie-player {
+    width: 350px;
+    height: 350px;
+    transform: translate(-35px, -112px);
+  }
+  body main div#about-us section#our-objective div#text {
+    padding-left: 20px;
+  }
+  body main div#about-us section#our-objective div#text h3 {
+    margin-top: 60px;
+    font-size: 2em;
+  }
+  body main div#about-us section#our-objective div#text h2 {
+    font-size: 2.4em;
+  }
+  body main div#pre-footer-section {
+    margin-top: 0px;
+  }
+  body main div#pre-footer-section section div.doctors-list h3 {
+    font-size: 1.7em;
+  }
+  body main div#pre-footer-section section div.doctors-list h2 {
+    padding: 0px 30px;
+    font-size: 2.6em;
+  }
+  body main div#pre-footer-section section div.cards-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body main div#pre-footer-section section div.cards-list div.cards {
+    margin: 20px 40px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  body main div#pre-footer-section section div.doctors-list h3 {
+    font-size: 1.8em;
+  }
+  body main div#pre-footer-section section div.doctors-list h2 {
+    font-size: 3.3em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body main div section#hero {
+    padding-top: 0px;
+    overflow: hidden;
+    justify-content: center;
+  }
+  body main div section#hero div#download-app {
+    position: relative;
+    z-index: 1;
+  }
+  body main div section#hero div#lottie-animation {
+    min-width: 400px;
+    min-height: 400px;
+    z-index: 0;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body main div section#hero {
+    padding-top: 0px;
+    overflow: hidden;
+    justify-content: center;
+  }
+  body main div section#hero div#download-app {
+    position: relative;
+    z-index: 1;
+  }
+  body main div section#hero div#download-app h1 {
+    font-size: 1.5em;
+  }
+  body main div section#hero div#download-app h2 {
+    font-size: 2.76em;
+    max-width: 700px;
+  }
+  body main div section#hero div#download-app p {
+    font-size: 1.2em;
+  }
+  body main div section#hero div#download-app div#download-buttons {
+    max-width: 400px;
+  }
+  body main div section#hero div#download-app div#download-buttons a {
+    padding: 18px;
+    font-size: 16px;
+  }
+  body main div section#hero div#lottie-animation {
+    min-width: 400px;
+    min-height: 400px;
+    z-index: 0;
+    position: relative;
+  }
+  body main div#about-us {
+    min-height: 760px;
+  }
+  body main div#about-us section#our-objective div#list-animation {
+    transform: translateY(90px);
+  }
+  body main div#about-us section#our-objective div#list-animation ul li {
+    font-size: 1.8em;
+  }
+  body main div#about-us section#our-objective div#list-animation lottie-player {
+    width: 400px;
+    height: 400px;
+    transform: translate(-25px, -120px);
+  }
+  body main div#about-us section#our-objective div#text h3 {
+    margin-top: 60px;
+    font-size: 2.2em;
+  }
+  body main div#about-us section#our-objective div#text h2 {
+    font-size: 3em;
+    max-width: 700px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body main div section#hero div#download-app {
+    height: auto;
+    margin-left: 15%;
+  }
+  body main div section#hero div#download-app h1 {
+    font-size: 1.9em;
+  }
+  body main div section#hero div#download-app h2 {
+    font-size: 3.8em;
+  }
+  body main div section#hero div#download-app p {
+    margin-bottom: 0px;
+    font-size: 1.35em;
+  }
+  body main div section#hero div#download-app div#download-buttons {
+    padding-top: 30px;
+  }
+  body main div section#hero div#download-app div#download-buttons a {
+    font-size: 18px;
+  }
+  body main div section#hero div#lottie-animation {
+    margin-right: 15%;
+  }
+  body main div section#hero div#lottie-animation lottie-player {
+    max-width: 600px;
+    max-height: 600px;
+  }
+  body main div#about-us section#our-objective {
+    padding-top: 25px;
+  }
+  body main div#about-us section#our-objective div#list-animation {
+    transform: translateY(0px);
+  }
+  body main div#about-us section#our-objective div#list-animation ul {
+    transform: translateY(20px);
+  }
+  body main div#about-us section#our-objective div#list-animation ul li {
+    font-size: 2.5em;
+  }
+  body main div#about-us section#our-objective div#list-animation lottie-player {
+    width: 500px;
+    height: 500px;
+    transform: translate(-60px, -124px);
+  }
+  body main div#about-us section#our-objective div#text h3 {
+    font-size: 3em;
+  }
+  body main div#about-us section#our-objective div#text h2 {
+    font-size: 4.5em;
+  }
+  body main div#pre-footer-section section div.doctors-list h3 {
+    font-size: 2.6em;
+  }
+  body main div#pre-footer-section section div.doctors-list h2 {
+    font-size: 3.6em;
+  }
+  body main div#pre-footer-section section div.cards-list {
+    padding-top: 6%;
+    padding-bottom: 10%;
+  }
+  body main div#pre-footer-section section div.cards-list div.cards {
+    margin: 0px 5%;
+    transform: scale(1.3);
+  }
+  body main div#pre-footer-section section div.cards-list div.cards:hover {
+    transform: scale(1.4);
+  }
+}

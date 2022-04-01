@@ -1,0 +1,651 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/epilogue/Epilogue-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Epilogue-Regular";
+    src: url("../fonts/epilogue/Epilogue-Medium.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Epilogue-Regular";
+    src: url("../fonts/epilogue/Epilogue-SemiBold.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/epilogue/Epilogue-Black.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("../fonts/epilogue/Epilogue-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("../fonts/epilogue/Epilogue-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue-Regular';
+    button{
+        border: none;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    ul{
+        list-style: none;
+    }
+    header{
+        background-color: #fff;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        height:90px;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            display: flex;
+            flex-direction: row;
+            padding: 5px 0px 0px 10px;
+            svg{
+                width: 130px;
+            }
+        }
+        nav.show-desktop{
+            display: none;     
+        }
+        button{
+            display: flex;
+            padding: 10px;
+            border-radius: 6px;
+            justify-content: center;
+            align-items: center;
+            background-color: #25409A;
+        }
+    }
+    main{
+        margin-top: 50px;
+        width: 100%;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            section#hero{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                div#download-app{
+                    padding: 0px 15px 0px 20px;
+                    width: 100%;
+                    display: table;
+                    justify-items: center;
+                    flex-direction: row;
+                    h1{
+                        padding: 0;
+                        margin: 0;
+                        color:#436ccc;
+                        font-weight: 500;
+                        font-size: 1.2em;
+                        margin-bottom: 0px;
+                        letter-spacing: 1px;
+                        transform: scale(1, 0.9);
+                    }
+                    h2{
+                        max-width: 366px;
+                        min-height: 27px;
+                        margin-top: 10px;
+                        margin-bottom: 15px;
+                        color: #211F62;
+                        text-align: left;
+                        font-size: 34px;
+                    }
+                    p{
+                        margin-top: 0px;;
+                        padding-top: 0px;
+                        max-width: 435px;
+                        color: #9999B7;
+                        font-size: 15px;
+                        text-align:left;
+                    }
+                    div#download-buttons{
+                        padding: 20px 3px 0px 3px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        max-width: 290px;
+                        margin-left: 0px;
+                        justify-content: space-around;
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 13px;
+                            padding: 16px;
+                            font-weight: 500;
+                            border-radius: 27px;
+                            color: #32306E;
+                            box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+                        }
+                        a:first-child{
+                            background-color: #FB6E67;
+                            color: #fff;
+                            box-shadow: none;
+                        }
+                    }
+                
+                }
+                div#lottie-animation{
+                    width: 100%;
+                    padding:0;
+                    margin:0;
+                    max-width: 100vw;
+                    lottie-player{
+                        max-width: 500px; 
+                        max-height: 500px;
+                        padding:0;
+                        margin-top:30px;
+                    }
+                } 
+            }    
+    }
+
+    div#about-us{
+        background-color: #7f9de4d1;
+        overflow: hidden;
+        display: block;
+        margin: 0;
+        width: 100%;
+        min-height: 720px;
+        max-height: 720px;
+        section#our-objective{
+            overflow: hidden;
+            display: flex;
+            flex-direction: column-reverse;
+            padding-top: 50px;
+            div#list-animation{  
+                padding-top: 20px;
+                lottie-player{
+                    width: 300px; 
+                    height: 300px;
+                    margin: 0 auto;
+                    transform: translateY(-102px);
+                    border-radius: 13px;
+                }
+                ul{
+                    padding: 0;
+                    li{
+                        font-size: 1.3em;
+                        color: black;
+                        font-weight: 400;
+                        text-align: left;
+                        background: url("../imagens/check.svg") no-repeat;
+                        list-style: none;
+                        margin: 0;
+                        vertical-align: middle;
+                        padding: 10px 0 15px 50px;
+                        margin-bottom: 15px;
+                    }
+                }              
+            }
+            div#text{
+                display: flex;
+                padding:0px 5px;
+                text-align: center;
+                    h3{
+                        font-size: 1.2em;
+                        font-weight: 300;
+                        color: #d5514a;
+                        margin-bottom: 0px;
+                        letter-spacing: 1px;
+                        transform: scale(1, 0.9);
+                    }
+                    h2{
+                        margin-bottom: 6px;      
+                        font-size: 2em;
+                        font-weight: 600;
+                        color: #32306E;
+                        max-width: 512px;
+                    }
+               
+                }
+        }
+    }
+    div#pre-footer-section{
+        padding: 50px 0px;
+        background: blue;
+        width: 100%;
+        min-height:100vh ;
+        background-color: white;
+        section{
+            div.doctors-list{
+                text-align: center;
+                h3{
+                    font-size: 1em;
+                    letter-spacing: 1px;
+                    transform: scale(1, 0.9);
+                    color:#618FFB;
+                    font-weight: 300;
+                }
+                h2{
+                    padding: 0px 8.3px;
+                    margin-top: 0px;
+                    font-size: 2em;
+                    color: #211F62;
+                }
+            }
+            div.cards-list{
+                display: flex;
+                flex-direction: column;
+                div.cards{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    border-radius: 13px;
+                    max-width: 200px;
+                    max-height: 450px;
+                    padding: 0px; 
+                    padding-bottom: 20px;
+                    text-align: center;
+                    background-color: white;
+                    box-shadow: 0 1px 6px rgba(0, 0, 1, 0.131);
+                    transition: 0.5s ease-in-out;
+                    margin-top: 35px;
+                    lottie-player{
+                        width: 400px; 
+                        height: 300px;
+                        transform: translateY(-3px);
+                        
+                    }
+                    div.card-info{
+                        background-color: white;
+                        transform: translateY(-40px);
+                        h2{
+                            max-width: 185px;
+                            color: #211F62;
+                            margin: 20px 0px 0px 0px;
+                        }
+                        h3{
+                            max-width: 185px;
+                            font-weight: 300;
+                            color: #4B80FC;
+                            margin: 10px 0px;
+                        }
+                        p{
+                            max-width: 190px;
+                            font-weight: 400;
+                            margin: 0px;
+                            padding: 0px 10px;
+                            
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 0 1px 6px rgba(0, 0, 1, 0.452);
+                        transform: scale(1.1, 1.1);
+                        cursor: pointer;
+                    }
+
+                }
+
+            }
+        }
+    }
+  } 
+}
+
+@media screen and (min-width:768px) {
+    
+    body{
+        header{
+            padding:60px;
+            nav.show-desktop{
+                display: flex;
+                align-items: center;
+                a{
+                    position: relative;
+                    display: inline-block;
+                    font-weight: 300;
+                    padding: 10px;
+                    color: #211F62;
+                    margin-left: 8px;
+                    &:last-child{
+                        border-radius: 27px;
+                        transition: 600ms ease-in-out;
+                        &:hover{
+                            font-weight: 500;
+                            padding:16px 20px;
+                            color: #ffffff;
+                            background-color: #FB6E67;      
+                        }
+                    }
+                    &.underline-animation{
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            transform: scaleX(0);
+                            height: 2px;
+                            bottom: 0;
+                            left: 0;
+                            background-color: #211F62;
+                            transform-origin: bottom right;
+                            transition: transform 0.5s ease-out;
+                        }
+    
+                        &:hover{
+                            &:after{
+                                transform: scaleX(1);
+                                transform-origin: bottom left;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+            button{
+                display: none;
+            }
+        }
+        main{
+            margin-top: 0px;
+            div{
+                section#hero{
+                    flex-direction: unset;               
+                    div#download-app{
+                        justify-content: center;
+                        width: 40%;
+                    }
+                    div#lottie-animation{
+                        width: 40%;
+                    }
+                }
+            }
+            div#about-us{
+                section#our-objective{
+                    overflow: hidden;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: row-reverse;
+                    div#list-animation{
+                        ul{
+                            li{
+                                font-size: 1.6em;
+                            }
+                        }
+                        lottie-player{
+                            width: 350px;
+                            height: 350px;
+                            transform: translate(-35px,-112px);
+                        }
+                        transform: translateY(130px);
+                    }
+                    div#text{
+                        padding-left: 20px;
+                        h3{
+                            margin-top: 60px;
+                            font-size: 2em;
+                        }
+                        h2{
+                            font-size: 2.4em;
+                        }
+                    }
+                }
+            }
+            div#pre-footer-section{
+                margin-top: 0px;
+                section{
+                    div.doctors-list{
+                        h3{
+                            font-size: 1.7em;
+                        }
+                        h2{
+                            padding: 0px 30px;
+                            font-size: 2.6em;
+                        }
+                    }
+                    div.cards-list{
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        div.cards{
+                            margin: 20px 40px;
+                        }
+                    }
+                }
+            }
+        }     
+    }
+}
+
+@media screen and (min-width:1120px){
+    body{
+        main{
+            div#pre-footer-section{
+                section{
+                    div.doctors-list{
+                        h3{
+                           font-size: 1.8em; 
+                        }
+                        h2{
+                            font-size: 3.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    body{
+        main{
+            div{
+                section#hero{
+                    padding-top: 0px;
+                    overflow: hidden;
+                    justify-content: center;                
+                    div#download-app{
+                        position:relative;
+                        z-index: 1;
+                    }
+                    div#lottie-animation{
+                        min-width: 400px; 
+                        min-height: 400px;
+                        z-index: 0;
+                        position:relative;
+                    }
+                }
+            }
+        }     
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    body{
+        main{
+            div{
+                section#hero{
+                    padding-top: 0px;
+                    overflow: hidden;
+                    justify-content: center;                
+                    div#download-app{
+                        position:relative;
+                        z-index: 1;
+                        h1{
+                            font-size: 1.5em ;
+                        }
+                        h2{
+                            font-size: 2.76em;
+                            max-width: 700px;
+                        }
+                        p{
+                            font-size: 1.2em;
+                        }
+                        div#download-buttons{
+                            max-width: 400px;
+                            a{
+                                padding:18px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    div#lottie-animation{
+                        min-width: 400px; 
+                        min-height: 400px;
+                        z-index: 0;
+                        position:relative;
+                    }
+                }
+            }
+            div#about-us{
+                min-height: 760px;
+                section#our-objective{
+                    div#list-animation{
+                        ul{
+                            li{
+                                font-size: 1.8em;
+                            }
+                        }
+                        lottie-player{
+                            width: 400px;
+                            height: 400px;
+                            transform: translate(-25px,-120px);
+                        }
+                        transform: translateY(90px);
+                    }
+                    div#text{
+                        h3{
+                            margin-top: 60px;
+                            font-size: 2.2em;
+                        }
+                        h2{
+                            font-size: 3em;
+                            max-width: 700px;
+                        }
+                    }
+                }
+            }
+        }     
+    }
+}
+
+
+
+@media screen and (min-width:1440px){
+    body{
+        main{
+            div{
+                section#hero{
+                    
+                    div#download-app{
+                        height: auto;
+                        margin-left: 15%;
+                        h1{
+                            font-size: 1.9em;
+                        }
+                        h2{
+                            font-size: 3.8em;
+                            
+                        }
+                        p{
+                            margin-bottom: 0px;
+                            font-size: 1.35em;;
+                        }
+                        div#download-buttons{
+                            padding-top: 30px;
+                            a{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+    
+                    div#lottie-animation{
+                        margin-right: 15%;
+                        lottie-player{
+                            max-width: 600px;
+                            max-height: 600px;
+                        }
+                    }
+                }
+            }
+            div#about-us{
+                section#our-objective{
+                    padding-top: 25px;
+                    div#list-animation{
+                        transform: translateY(0px);
+                        
+                        ul{
+                            transform: translateY(20px);
+                            li{
+                                font-size: 2.5em;
+                            }
+                        }
+                        lottie-player{
+                            width: 500px;
+                            height: 500px;
+                            transform: translate(-60px,-124px);
+                        }
+                    }
+                    div#text{
+                        h3{
+                            font-size: 3em;
+                        }
+                        h2{
+                            font-size: 4.5em;
+                        }
+                    }
+                }
+            }
+            div#pre-footer-section{
+                section{
+                    div.doctors-list{
+                        h3{
+                            font-size: 2.6em;
+                        }
+                        h2{
+                            font-size: 3.6em;
+                        }
+                    }
+                    div.cards-list{
+                        padding-top: 6%;
+                        padding-bottom: 10%;
+                        div.cards{
+                            margin: 0px 5%;
+                            transform: scale(1.3);
+                            &:hover{
+                                transform: scale(1.4);
+                            }
+                        }
+                    }
+                }
+            }
+        }     
+    }
+}

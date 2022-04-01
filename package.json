@@ -1,0 +1,23 @@
+{
+  "name": "medical_project",
+  "version": "1.0.0",
+  "description": "\"This is the first project made by Antonio Gomes on HCODE training\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --no-source-map --watch assets/sass:assets/css"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "js",
+    "hcode",
+    "jornaduca",
+    "empreeduca",
+    "Antonio_Gomes42"
+  ],
+  "author": "AntonioGomes42",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.49.10"
+  }
+}
