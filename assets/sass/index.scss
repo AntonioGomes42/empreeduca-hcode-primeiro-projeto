@@ -99,6 +99,7 @@ body{
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                max-width: 2150px;
                 div#download-app{
                     padding: 0px 15px 0px 20px;
                     width: 100%;
@@ -181,7 +182,7 @@ body{
         display: block;
         margin: 0;
         width: 100%;
-        min-height: 720px;
+        min-height: 100vh;
         max-height: 720px;
         section#our-objective{
             overflow: hidden;
@@ -320,6 +321,16 @@ body{
   } 
 }
 
+@media screen and (min-height:646px){
+    main{
+        div{
+            section#hero{
+                min-height: 100vh;
+            }
+        }
+    }
+}
+
 @media screen and (min-width:768px) {
     
     body{
@@ -374,10 +385,9 @@ body{
             }
         }
         main{
-            margin-top: 0px;
+            margin-top: 70px;
             div{
-                section#hero{
-                    flex-direction: unset;               
+                section#hero{            
                     div#download-app{
                         justify-content: center;
                         width: 40%;
@@ -388,11 +398,12 @@ body{
                 }
             }
             div#about-us{
+                max-height: unset;
                 section#our-objective{
                     overflow: hidden;
                     align-items: flex-start;
                     justify-content: center;
-                    flex-direction: row-reverse;
+                    
                     div#list-animation{
                         ul{
                             li{
@@ -404,7 +415,7 @@ body{
                             height: 350px;
                             transform: translate(-35px,-112px);
                         }
-                        transform: translateY(130px);
+                        transform: translateY(30px);
                     }
                     div#text{
                         padding-left: 20px;
@@ -441,6 +452,18 @@ body{
             }
         }     
     }
+}
+@media screen and (min-width: 1024px) {
+    body{
+        main{
+            margin-top: 0px;
+            div{
+                section#hero{
+                    flex-direction: row;   
+                }
+            }
+        }
+    } 
 }
 
 @media screen and (min-width:1120px){
@@ -538,7 +561,7 @@ body{
                             height: 400px;
                             transform: translate(-25px,-120px);
                         }
-                        transform: translateY(90px);
+                        transform: translateY(30px);
                     }
                     div#text{
                         h3{
@@ -563,6 +586,7 @@ body{
         main{
             div{
                 section#hero{
+                    
                     
                     div#download-app{
                         height: auto;
@@ -609,8 +633,7 @@ body{
                         }
                         lottie-player{
                             width: 500px;
-                            height: 500px;
-                            transform: translate(-60px,-124px);
+                            height: 500px;                         
                         }
                     }
                     div#text{
@@ -634,6 +657,7 @@ body{
                         }
                     }
                     div.cards-list{
+                        flex-wrap: nowrap;
                         padding-top: 6%;
                         padding-bottom: 10%;
                         div.cards{
