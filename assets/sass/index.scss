@@ -93,7 +93,7 @@ body{
                         margin-top: 0px;;
                         padding-top: 0px;
                         max-width: 435px;
-                        color: #9999B7;
+                        color: #6f6fa3;
                         font-size: 15px;
                         text-align:left;
                     }
@@ -119,7 +119,7 @@ body{
                         }
                         a:first-child{
                             background-color: #FB6E67;
-                            color: #fff;
+                            color: #261e1e;
                             box-shadow: none;
                         }
                     }
@@ -276,7 +276,7 @@ body{
         }
     }
     >hr{
-        margin-bottom:70px;
+        margin-bottom:100px;
         background: #436ccc30;
         outline: none;
         border: 0.2px solid #436ccc30;
@@ -291,6 +291,7 @@ body{
         section{
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
             width: 100%;
             justify-content: center;
             align-items: center;

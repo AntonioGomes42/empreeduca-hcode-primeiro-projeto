@@ -96,7 +96,7 @@ body main div section#hero div#download-app p {
   margin-top: 0px;
   padding-top: 0px;
   max-width: 435px;
-  color: #9999B7;
+  color: #6f6fa3;
   font-size: 15px;
   text-align: left;
 }
@@ -123,7 +123,7 @@ body main div section#hero div#download-app div#download-buttons a {
 }
 body main div section#hero div#download-app div#download-buttons a:first-child {
   background-color: #FB6E67;
-  color: #fff;
+  color: #261e1e;
   box-shadow: none;
 }
 body main div section#hero div#lottie-animation {
@@ -267,7 +267,7 @@ body main div#our-doctors section div.cards-list div.cards:hover {
   cursor: pointer;
 }
 body main > hr {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   background: rgba(67, 108, 204, 0.1882352941);
   outline: none;
   border: 0.2px solid rgba(67, 108, 204, 0.1882352941);
@@ -283,6 +283,7 @@ body main div#faq {
 body main div#faq section {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
