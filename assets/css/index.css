@@ -30,6 +30,7 @@ body header {
   align-items: center;
 }
 body header div {
+  animation-duration: 1200ms;
   display: flex;
   flex-direction: row;
   padding: 5px 0px 0px 10px;
@@ -40,6 +41,21 @@ body header div svg {
 body header nav.show-desktop {
   display: none;
 }
+body header nav.show-desktop a:nth-child(1) {
+  animation-duration: 700ms;
+}
+body header nav.show-desktop a:nth-child(2) {
+  animation-duration: 1100ms;
+}
+body header nav.show-desktop a:nth-child(3) {
+  animation-duration: 1200ms;
+}
+body header nav.show-desktop a:nth-child(4) {
+  animation-duration: 1400ms;
+}
+body header nav.show-desktop a:nth-child(5) {
+  animation-duration: 1600ms;
+}
 body header button {
   display: flex;
   padding: 10px;
@@ -47,9 +63,10 @@ body header button {
   justify-content: center;
   align-items: center;
   background-color: #25409A;
+  animation-duration: 900ms;
 }
 body main {
-  margin-top: 50px;
+  overflow-y: hidden;
   width: 100%;
 }
 body main div {
@@ -73,6 +90,7 @@ body main div section#hero div#download-app {
   display: table;
   justify-items: center;
   flex-direction: row;
+  animation-duration: 1100ms;
 }
 body main div section#hero div#download-app h1 {
   padding: 0;
@@ -127,10 +145,12 @@ body main div section#hero div#download-app div#download-buttons a:first-child {
   box-shadow: none;
 }
 body main div section#hero div#lottie-animation {
-  width: 500px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   padding: 0;
   margin: 0;
-  max-width: 100vw;
+  animation-duration: 1300ms;
 }
 body main div section#hero div#lottie-animation img {
   width: 100%;
@@ -185,9 +205,10 @@ body main div#about-us section#our-objective div#text h3 {
   color: #a33731;
   margin-bottom: 0px;
   letter-spacing: 1px;
-  transform: scale(1, 0.9);
+  animation-duration: 1000ms;
 }
 body main div#about-us section#our-objective div#text h2 {
+  animation-duration: 1000ms;
   margin-bottom: 6px;
   font-size: 2em;
   font-weight: 600;
@@ -209,14 +230,17 @@ body main div#our-doctors section div.doctors-list h3 {
   letter-spacing: 1px;
   transform: scale(1, 0.9);
   color: #618FFB;
+  animation-duration: 1300ms;
 }
 body main div#our-doctors section div.doctors-list h2 {
+  animation-duration: 1300ms;
   padding: 0px 8.3px;
   margin-top: 0px;
   font-size: 2em;
   color: #211F62;
 }
 body main div#our-doctors section div.cards-list {
+  animation-duration: 1000ms;
   display: flex;
   flex-direction: column;
 }
@@ -275,6 +299,7 @@ body main > hr {
   border-radius: 300px;
   width: 85%;
   max-width: 2172px;
+  animation-duration: 1000ms;
 }
 body main div#faq {
   margin-top: 50px;
@@ -290,21 +315,25 @@ body main div#faq section {
   align-items: center;
 }
 body main div#faq section div h2 {
+  animation-duration: 700ms;
   margin: 0px auto 0px 8%;
   margin-bottom: 10px;
   color: #211F62;
   font-size: 1.3em;
 }
 body main div#faq section div span {
+  animation-duration: 600ms;
   font-size: 2.1em;
   width: 85%;
   color: #EF6D58;
 }
 body main div#faq section div p {
+  animation-duration: 700ms;
   width: 86%;
   font-size: 1em;
 }
 body main div#faq section div a {
+  animation-duration: 1000ms;
   color: #211F62;
   margin: 0px auto 0px 7.5%;
 }
@@ -321,6 +350,18 @@ body main div#faq section div.faq-questions div.faq-item {
   border: 1px solid #32306E;
   margin-bottom: 1px;
   transition: 200ms ease-in-out;
+}
+body main div#faq section div.faq-questions div.faq-item:nth-child(1) {
+  animation-duration: 700ms;
+}
+body main div#faq section div.faq-questions div.faq-item:nth-child(2) {
+  animation-duration: 1100ms;
+}
+body main div#faq section div.faq-questions div.faq-item:nth-child(3) {
+  animation-duration: 1200ms;
+}
+body main div#faq section div.faq-questions div.faq-item:nth-child(4) {
+  animation-duration: 1400ms;
 }
 body main div#faq section div.faq-questions div.faq-item:hover {
   cursor: pointer;
@@ -355,6 +396,7 @@ body footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation-duration: 1200ms;
   width: 100%;
 }
 body footer ul {
@@ -418,9 +460,70 @@ body footer div.footer-bottom div.terms > .use-terms-botton, body footer div.foo
   font-size: 1.2em;
 }
 
+.fadeRigthAnimation {
+  animation-name: fadeRigthAnimation;
+}
+
+@keyframes fadeRigthAnimation {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.fadeLeftAnimation {
+  animation-name: fadeLeftAnimation;
+}
+
+@keyframes fadeLeftAnimation {
+  from {
+    transform: translate(-700px, -70px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+.fadeDownAnimation {
+  animation-name: fadeDownAnimation;
+}
+
+@keyframes fadeDownAnimation {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.fadeUpAnimation {
+  animation-name: fadeUpAnimation;
+}
+
+@keyframes fadeUpAnimation {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @media screen and (min-height: 646px) {
   main div section#hero {
     min-height: 100vh;
+  }
+}
+@media screen and (max-height: 686px) {
+  main div section#hero {
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -472,7 +575,7 @@ body footer div.footer-bottom div.terms > .use-terms-botton, body footer div.foo
   }
   body main div section#hero div#download-app {
     justify-content: center;
-    width: 40%;
+    width: 60%;
   }
   body main div section#hero div#lottie-animation {
     width: 40%;
@@ -539,6 +642,9 @@ body footer div.footer-bottom div.terms > .use-terms-botton, body footer div.foo
   body main div section#hero {
     flex-direction: row;
     padding-bottom: 50px;
+  }
+  body main div section#hero div#download-app {
+    width: 40%;
   }
   body main div#faq section {
     max-width: 1290px;
@@ -687,8 +793,6 @@ body footer div.footer-bottom div.terms > .use-terms-botton, body footer div.foo
   }
   body main div section#hero div#lottie-animation {
     margin-right: 15%;
-  }
-  body main div section#hero div#lottie-animation lottie-player {
     max-width: 600px;
     max-height: 600px;
   }
