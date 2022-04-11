@@ -156,15 +156,13 @@ body main div section#hero div#download-app div#download-buttons a:first-child {
   box-shadow: none;
 }
 body main div section#hero div#lottie-animation {
-  width: 100%;
+  width: 500px;
   padding: 0;
   margin: 0;
   max-width: 100vw;
 }
-body main div section#hero div#lottie-animation lottie-player {
-  max-width: 500px;
-  max-height: 500px;
-  padding: 0;
+body main div section#hero div#lottie-animation img {
+  width: 100%;
   margin-top: 30px;
 }
 body main div#about-us {
@@ -574,6 +572,7 @@ body footer div.footer-bottom div.terms > .use-terms-botton, body footer div.foo
   }
   body main div section#hero {
     flex-direction: row;
+    padding-bottom: 50px;
   }
   body main div#faq section {
     max-width: 1290px;
