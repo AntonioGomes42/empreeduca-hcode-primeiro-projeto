@@ -281,7 +281,7 @@ body main div#faq {
   width: 100%;
 }
 body main div#faq section {
-  overflow: hidden;
+  overflowY: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
