@@ -310,14 +310,20 @@ body main div#faq section div a {
 body main div#faq section div.faq-questions {
   max-width: 510px;
   width: 90%;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   margin-top: 70px;
 }
 body main div#faq section div.faq-questions div.faq-item {
   padding: 10px 8px;
+  background-color: #fff;
   border: 1px solid #32306E;
   margin-bottom: 1px;
+  transition: 200ms ease-in-out;
+}
+body main div#faq section div.faq-questions div.faq-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 body main div#faq section div.faq-questions div.faq-item:first-child {
   border-top-left-radius: 8px;
