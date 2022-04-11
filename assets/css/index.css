@@ -227,34 +227,34 @@ body main div#about-us section#our-objective div#text h2 {
   color: #32306E;
   max-width: 512px;
 }
-body main div#pre-footer-section {
-  padding: 50px 0px;
+body main div#our-doctors {
+  padding: 50px 0px 70px 0px;
   background: blue;
   width: 100%;
   min-height: 100vh;
   background-color: white;
 }
-body main div#pre-footer-section section div.doctors-list {
+body main div#our-doctors section div.doctors-list {
   text-align: center;
 }
-body main div#pre-footer-section section div.doctors-list h3 {
+body main div#our-doctors section div.doctors-list h3 {
   font-size: 1em;
   letter-spacing: 1px;
   transform: scale(1, 0.9);
   color: #618FFB;
   font-weight: 300;
 }
-body main div#pre-footer-section section div.doctors-list h2 {
+body main div#our-doctors section div.doctors-list h2 {
   padding: 0px 8.3px;
   margin-top: 0px;
   font-size: 2em;
   color: #211F62;
 }
-body main div#pre-footer-section section div.cards-list {
+body main div#our-doctors section div.cards-list {
   display: flex;
   flex-direction: column;
 }
-body main div#pre-footer-section section div.cards-list div.cards {
+body main div#our-doctors section div.cards-list div.cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,36 +271,113 @@ body main div#pre-footer-section section div.cards-list div.cards {
   transition: 0.5s ease-in-out;
   margin-top: 35px;
 }
-body main div#pre-footer-section section div.cards-list div.cards lottie-player {
+body main div#our-doctors section div.cards-list div.cards lottie-player {
   width: 400px;
   height: 300px;
   transform: translateY(-3px);
 }
-body main div#pre-footer-section section div.cards-list div.cards div.card-info {
+body main div#our-doctors section div.cards-list div.cards div.card-info {
   background-color: white;
   transform: translateY(-40px);
 }
-body main div#pre-footer-section section div.cards-list div.cards div.card-info h2 {
+body main div#our-doctors section div.cards-list div.cards div.card-info h2 {
   max-width: 185px;
   color: #211F62;
   margin: 20px 0px 0px 0px;
 }
-body main div#pre-footer-section section div.cards-list div.cards div.card-info h3 {
+body main div#our-doctors section div.cards-list div.cards div.card-info h3 {
   max-width: 185px;
   font-weight: 300;
   color: #4B80FC;
   margin: 10px 0px;
 }
-body main div#pre-footer-section section div.cards-list div.cards div.card-info p {
+body main div#our-doctors section div.cards-list div.cards div.card-info p {
   max-width: 190px;
   font-weight: 400;
   margin: 0px;
   padding: 0px 10px;
 }
-body main div#pre-footer-section section div.cards-list div.cards:hover {
+body main div#our-doctors section div.cards-list div.cards:hover {
   box-shadow: 0 1px 6px rgba(0, 0, 1, 0.452);
   transform: scale(1.1, 1.1);
   cursor: pointer;
+}
+body main > hr {
+  margin-bottom: 70px;
+  background: rgba(67, 108, 204, 0.1882352941);
+  outline: none;
+  border: 0.2px solid rgba(67, 108, 204, 0.1882352941);
+  height: 0.1px;
+  border-radius: 300px;
+  width: 85%;
+  max-width: 2172px;
+}
+body main div#faq {
+  margin-top: 50px;
+  width: 100%;
+}
+body main div#faq section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+body main div#faq section div h2 {
+  margin: 0px auto 0px 8%;
+  margin-bottom: 10px;
+  color: #211F62;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+body main div#faq section div span {
+  font-weight: 600;
+  font-size: 2.1em;
+  width: 85%;
+  color: #EF6D58;
+}
+body main div#faq section div p {
+  width: 86%;
+  font-size: 1em;
+}
+body main div#faq section div a {
+  font-weight: 500;
+  color: #211F62;
+  margin: 0px auto 0px 7.5%;
+}
+body main div#faq section div.faq-questions {
+  max-width: 510px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 70px;
+}
+body main div#faq section div.faq-questions div.faq-item {
+  padding: 10px 8px;
+  border: 1px solid #32306E;
+  margin-bottom: 1px;
+}
+body main div#faq section div.faq-questions div.faq-item:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+body main div#faq section div.faq-questions div.faq-item:first-child div {
+  border-bottom: 1px solid #32306E;
+}
+body main div#faq section div.faq-questions div.faq-item:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-bottom: 70px;
+}
+body main div#faq section div.faq-questions div.faq-item div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body main div#faq section div.faq-questions div.faq-item div h3 {
+  text-align: center;
+  font-weight: 500;
+  margin-right: 20px;
 }
 body footer {
   text-align: center;
@@ -326,25 +403,54 @@ body footer h3 {
   font-size: 1.4em;
   color: #FB6E67;
 }
+body footer div.footer-top {
+  display: flex;
+  flex-direction: column;
+}
 body footer div.footer-top h2 {
   margin: 60px 0px;
   font-weight: 500;
   font-size: 1.8em;
   color: #d5514a;
 }
-body footer div.footer-top div.footer-social-medias svg.icon {
+body footer div.footer-top div.footer-social-medias {
+  margin-bottom: 30px;
+}
+body footer div.footer-top div.footer-social-medias a svg.icon {
   width: 30px;
   height: 30px;
 }
-body footer div.footer-top div.footer-social-medias svg.middle-icon {
+body footer div.footer-top div.footer-social-medias a svg.middle-icon {
   margin: 0px 25px;
 }
 body footer > hr {
-  background-color: #32306E;
-  border: none;
-  height: 1.2px;
+  background: #ffffff;
+  outline: none;
+  border: 0.2px solid #fff;
+  height: 0.1px;
   border-radius: 300px;
+  width: 85%;
+}
+body footer div.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+body footer div.footer-bottom > p {
   width: 90%;
+  font-size: 1.3em;
+}
+body footer div.footer-bottom div.terms {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer div.footer-bottom div.terms > .use-terms-botton, body footer div.footer-bottom div.terms .privacy-policy-botton {
+  font-weight: 300;
+  font-size: 1.2em;
 }
 
 @media screen and (min-height: 646px) {
@@ -436,22 +542,30 @@ body footer > hr {
   body main div#about-us section#our-objective div#text h2 {
     font-size: 2.4em;
   }
-  body main div#pre-footer-section {
+  body main div#our-doctors {
     margin-top: 0px;
   }
-  body main div#pre-footer-section section div.doctors-list h3 {
+  body main div#our-doctors section div.doctors-list h3 {
     font-size: 1.7em;
   }
-  body main div#pre-footer-section section div.doctors-list h2 {
+  body main div#our-doctors section div.doctors-list h2 {
     padding: 0px 30px;
     font-size: 2.6em;
   }
-  body main div#pre-footer-section section div.cards-list {
+  body main div#our-doctors section div.cards-list {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  body main div#pre-footer-section section div.cards-list div.cards {
+  body main div#our-doctors section div.cards-list div.cards {
     margin: 20px 40px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  body main div#our-doctors section div.doctors-list h3 {
+    font-size: 1.8em;
+  }
+  body main div#our-doctors section div.doctors-list h2 {
+    font-size: 3.3em;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -461,13 +575,55 @@ body footer > hr {
   body main div section#hero {
     flex-direction: row;
   }
-}
-@media screen and (min-width: 1120px) {
-  body main div#pre-footer-section section div.doctors-list h3 {
-    font-size: 1.8em;
+  body main div#faq section {
+    max-width: 1290px;
+    flex-direction: row;
+    align-items: flex-start;
   }
-  body main div#pre-footer-section section div.doctors-list h2 {
-    font-size: 3.3em;
+  body main div#faq section div.faq-questions {
+    margin-top: 0px;
+    margin-right: 2%;
+  }
+  body footer {
+    padding-top: 70px;
+    width: 100%;
+  }
+  body footer div.footer-top {
+    max-width: 1326px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body footer div.footer-top h3 {
+    margin: 10px;
+  }
+  body footer div.footer-top h2 {
+    margin: 0px;
+  }
+  body footer div.footer-top div.footer-social-medias {
+    margin: 10px;
+  }
+  body footer hr {
+    max-width: 1326px;
+  }
+  body footer div.footer-bottom {
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+  }
+  body footer div.footer-bottom p {
+    display: flex;
+    justify-content: flex-start;
+  }
+  body footer div.footer-bottom div.terms {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  body footer div.footer-bottom div.terms .use-terms-botton {
+    margin-right: 50px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -593,22 +749,43 @@ body footer > hr {
   body main div#about-us section#our-objective div#text h2 {
     font-size: 4.5em;
   }
-  body main div#pre-footer-section section div.doctors-list h3 {
+  body main div#our-doctors section div.doctors-list h3 {
     font-size: 2.6em;
   }
-  body main div#pre-footer-section section div.doctors-list h2 {
+  body main div#our-doctors section div.doctors-list h2 {
     font-size: 3.6em;
   }
-  body main div#pre-footer-section section div.cards-list {
+  body main div#our-doctors section div.cards-list {
     flex-wrap: nowrap;
     padding-top: 6%;
     padding-bottom: 10%;
   }
-  body main div#pre-footer-section section div.cards-list div.cards {
+  body main div#our-doctors section div.cards-list div.cards {
     margin: 0px 5%;
     transform: scale(1.3);
   }
-  body main div#pre-footer-section section div.cards-list div.cards:hover {
+  body main div#our-doctors section div.cards-list div.cards:hover {
     transform: scale(1.4);
+  }
+  body main div#faq {
+    margin-top: 0px;
+  }
+  body main div#faq section div.faq-head h2 {
+    font-size: 2em;
+  }
+  body main div#faq section div.faq-head span {
+    font-size: 3em;
+  }
+  body main div#faq section div.faq-head > p {
+    font-size: 1.6em;
+  }
+  body main div#faq section div.faq-head a {
+    font-size: 1.4em;
+  }
+  body main div#faq section div.faq-questions div.faq-item div h3 {
+    font-size: 1.5em;
+  }
+  body main div#faq section div.faq-questions div.faq-item p {
+    font-size: 1.2em;
   }
 }

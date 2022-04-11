@@ -237,8 +237,8 @@ body{
                 }
         }
     }
-    div#pre-footer-section{
-        padding: 50px 0px;
+    div#our-doctors{
+        padding: 50px 0px 70px 0px;
         background: blue;
         width: 100%;
         min-height:100vh ;
@@ -318,6 +318,87 @@ body{
             }
         }
     }
+    >hr{
+        margin-bottom:70px;
+        background: #436ccc30;
+        outline: none;
+        border: 0.2px solid #436ccc30;
+        height: 0.1px;
+        border-radius: 300px;
+        width: 85%;
+        max-width: 2172px;
+    }
+    div#faq{
+        margin-top: 50px;
+        width: 100%;
+        section{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            div{
+                
+                h2{
+                    margin: 0px auto 0px 8%;
+                    margin-bottom: 10px;
+                    color: #211F62;
+                    font-size: 1.3em;
+                    font-weight: 300;
+                }
+                span{
+                    font-weight: 600;
+                    font-size: 2.1em;
+                    width: 85%;
+                    color: #EF6D58;
+                }
+                p{
+                    width: 86%;
+                    font-size: 1em;
+                }
+                a{
+                    font-weight: 500;
+                    color: #211F62;
+                    margin: 0px auto 0px 7.5%;
+                }
+            }
+            div.faq-questions{
+                max-width: 510px;
+                width: 90%;
+                display: grid;
+                grid-template-columns: 1fr;
+                margin-top: 70px;
+                div.faq-item{
+                    padding: 10px 8px;
+                    border: 1px solid #32306E;
+                    margin-bottom: 1px;
+                    &:first-child{
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                        div{
+                            border-bottom: 1px solid #32306E;
+                        }
+                    }
+                    &:last-child{
+                        border-bottom-left-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        margin-bottom: 70px;
+                    }
+                    div{
+                        
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        h3{
+                            text-align: center;
+                            font-weight: 500;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
   }
     footer{
         text-align: center;
@@ -342,6 +423,8 @@ body{
             color: #FB6E67;
         }
         div.footer-top{
+            display:flex;
+            flex-direction: column;
             h2{
                 margin: 60px 0px;
                 font-weight: 500;
@@ -349,23 +432,49 @@ body{
                 color: #d5514a;
             }
             div.footer-social-medias{
-                svg.icon{
-                    width: 30px;
-                    height: 30px;
-                }
-                svg.middle-icon{
-                    margin: 0px 25px;
-                }
+                margin-bottom: 30px;
+                a{
+                    svg.icon{
+                        width: 30px;
+                        height: 30px;
+                    }
+                    svg.middle-icon{
+                        margin: 0px 25px;
+                    }
+                }       
             }
         }
         width: 100%;
-        >hr{
-            background-color: #32306E;
-            border: none;
-            height: 1.2px;
+        > hr{
+            background: #ffffff;
+            outline: none;
+            border: 0.2px solid #fff;
+            height: 0.1px;
             border-radius: 300px;
-            width: 90%;
-        } 
+            width: 85%;
+        }
+         div.footer-bottom{
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+            padding-bottom: 30px;
+            >p{
+                width: 90%;
+                font-size:1.3em;
+            }
+            div.terms{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;    
+                > .use-terms-botton,.privacy-policy-botton{
+                    font-weight: 300;
+                    font-size:1.2em;
+                }
+            }
+            
+         }
     } 
 }
 
@@ -477,7 +586,7 @@ body{
                     }
                 }
             }
-            div#pre-footer-section{
+            div#our-doctors{
                 margin-top: 0px;
                 section{
                     div.doctors-list{
@@ -501,23 +610,11 @@ body{
         }     
     }
 }
-@media screen and (min-width: 1024px) {
-    body{
-        main{
-            margin-top: 0px;
-            div{
-                section#hero{
-                    flex-direction: row;   
-                }
-            }
-        }
-    } 
-}
 
 @media screen and (min-width:1120px){
     body{
         main{
-            div#pre-footer-section{
+            div#our-doctors{
                 section{
                     div.doctors-list{
                         h3{
@@ -531,6 +628,73 @@ body{
             }
         }
     }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        main{
+            margin-top: 0px;
+            div{
+                section#hero{
+                    flex-direction: row;   
+                }
+            }
+            div#faq{
+                section{
+                    max-width: 1290px;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    div.faq-questions{
+                        margin-top: 0px;
+                        margin-right: 2%;
+                    }
+                }
+            }
+        }
+        footer{
+            padding-top: 70px;
+            width: 100%;
+            div.footer-top{
+                max-width: 1326px;
+                h3{
+                        margin: 10px;
+                    }
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                h2{
+                    margin: 0px;
+                }
+                div.footer-social-medias{
+                    margin: 10px;
+                }
+                
+            }
+            hr{
+                max-width: 1326px;
+            }
+            div.footer-bottom{
+                justify-content: center;
+                flex-direction: row;
+                width: 80%;
+                max-width: 1200px;
+                p{
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                div.terms{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width:100%;
+                    .use-terms-botton{
+                        margin-right: 50px;
+                    }
+                   
+                }
+            }
+        }
+    } 
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -694,7 +858,7 @@ body{
                     }
                 }
             }
-            div#pre-footer-section{
+            div#our-doctors{
                 section{
                     div.doctors-list{
                         h3{
@@ -713,6 +877,38 @@ body{
                             transform: scale(1.3);
                             &:hover{
                                 transform: scale(1.4);
+                            }
+                        }
+                    }
+                }
+            }
+            
+            div#faq{
+                margin-top: 0px;
+                section{
+                    div.faq-head{
+                        h2{
+                            font-size: 2em;
+                        }
+                        span{
+                            font-size: 3em;
+                        }
+                        >p{
+                            font-size: 1.6em;
+                        }
+                        a{
+                            font-size: 1.4em;
+                        }
+                    }
+                    div.faq-questions{
+                        div.faq-item{
+                            div{
+                                h3{
+                                    font-size: 1.5em;
+                                }
+                            }
+                            p{
+                                font-size: 1.2em;
                             }
                         }
                     }
