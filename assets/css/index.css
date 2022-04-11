@@ -281,6 +281,7 @@ body main div#faq {
   width: 100%;
 }
 body main div#faq section {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -323,7 +324,7 @@ body main div#faq section div.faq-questions div.faq-item {
 }
 body main div#faq section div.faq-questions div.faq-item:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 body main div#faq section div.faq-questions div.faq-item:first-child {
   border-top-left-radius: 8px;
