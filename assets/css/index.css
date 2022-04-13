@@ -9,6 +9,9 @@ body {
   font-family: "Epilogue";
   font-weight: 500;
 }
+body.open-menu {
+  overflow: hidden;
+}
 body button {
   border: none;
 }
