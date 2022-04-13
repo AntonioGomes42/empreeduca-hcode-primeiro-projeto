@@ -318,7 +318,7 @@ body{
         margin-top: 50px;
         width: 100%;
         section{
-            overflowY: hidden;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -326,7 +326,6 @@ body{
             justify-content: center;
             align-items: center;
             div{
-                
                 h2{
                     animation-duration: 700ms;
                     margin: 0px auto 0px 8%;
@@ -356,6 +355,7 @@ body{
                 width: 90%;
                 display: flex;
                 flex-direction: column;
+                padding-top: 10px;
                 margin-top: 70px;
                 div.faq-item{
                     padding: 10px 8px;
@@ -414,7 +414,6 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        animation-duration: 1200ms;
         ul{
             padding-left: 0px;
             margin-bottom: 60px;
